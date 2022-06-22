@@ -3,16 +3,16 @@
 <head></head>
 <body>
     <script>
-        var n1 = Number.parseInt(prompt("Digite um número!"))
-        var n2 = Number.parseFloat(prompt("Digite outro número!"))
+        var n1 = Number.parseInt(window.prompt("Digite um número!"));
+        var n2 = Number.parseFloat(window.prompt("Digite outro número!"));
         //parseInt() - números inteiros
         //parseFloat() - números flutuantes
         //String() - letras e caracteres
         //Boolean() - True | False
         var n3 = n1 + n2
-        alert("A soma desses dois números é: " + n3 + " meu rapaz!") 
+        window.alert("A soma desses dois números é: " + n3 + " meu rapaz!") 
         //Contatenando variaveis e string com '+'
-        alert(`A soma ${n1} + ${n2} é ${n3}`)
+        window.alert(`A soma ${n1} + ${n2} é ${n3}`)
         //Contatenando variaveis e string com (aspas, $ e {})
     </script>
 </body>
