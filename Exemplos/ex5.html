@@ -1,97 +1,43 @@
 <!DOCTYPE html>
 <html> 
     <head>
-        <style>
-            body{
-                background-color: rgb(85, 85, 212);
-                color: white;
-            }
-
-            h1{
-                font-family: Impact;
-                font-weight: normal;
-                text-decoration:underline;
-            }
-
-            p{
-                font-family: sans-serif;
-            }
-
-            .banana{
-                padding-top: 7%;
-            }
-
-
-            figure{
-                display: flex;
-                justify-content: center;
-            }
-        </style>
+        <link rel="stylesheet" href="assets/styles/ex5.css">
     </head>
     <body>
-        <h1>Inciando estudos - DOM </h1>
-        <p><strong>D</strong>ocument <strong>O</strong>bject <strong>M</strong>odel</p>
-        <p id="teste">Aqui vai o resultado</p>
-        <p>Aprendendo a usar <strong>DOM</strong> em Javascript.</p>
-        <div id="caixa">CLIQUE AQUI</div>
-        <aside id="asidezinha">
-            <p class="banana"><mark>Arvore DOM</mark></p>
-            <figure>
-                <img src="DOM.png">
-            </figure>
-        </aside>
+        <h1>DOM - Document Object Model</h1>
+        <img src="assets/images/DOM.png" title="arvore-DOM">
+        <div style="background-color:green;" class="teste">Caixa para teste</div>
+        <br>
         
         <script>
-            //exemplo árvore DOM sendo usada:
-            window.document.body.h1
-
-            /*window.document.write(window.document.body.h1)*/
-
-            window.document.write(window.document.charset)
-
+            //Utilizando a árvore DOM:
+            var corpo = window.document.body;
+            corpo.style.backgroundColor='blueviolet';
+            corpo.style.fontFamily='sans-serif';
+            corpo.style.color='white';
+            
+            window.document.write('<hr>')
+            
+            window.document.write(window.document.body.p1 +' ESCRITO APENAS COM JAVASCRIPT!!!');
             window.document.write('<br>');
+            window.document.write(window.document.charset + '<br>');
+            window.document.write(window.navigator + '<br>');
+            window.document.write(window.document.URL + '<br>');
 
-            window.document.write(window.navigator)
-
-            window.document.write('<br>');
-
-            window.document.write(window.document.URL)
-
-            window.document.write('<br>');
-
-            //SELECIONANDO (por tag, id, nome, classe ou seletor)
+            //Selecionando elementos:
                 //por id - getElementById()
-                //por class - getElementsByClassName()
+                //por classe - getElementsByClassName()
                 //por nome - getElementsByName()
                 //por seletor - querySeletor() e querySelectorAll
                 //por tag - getElementsByTagName()
-                var p2 = window.document.getElementsByTagName("p")[2];
-                window.document.write('Escrito com com JS:'+p2.innerText);
+                var patoGanso = window.document.getElementsByClassName("teste")[0];
+                window.document.write('Reescrito com com JS: ' + patoGanso.innerText + '<br>');
 
-                p2.style.backgroundColor = 'green';
+                //innerText - Copia o texto do elemento selecionado.
+                window.document.write(patoGanso.innerText+ ' innerText'+ '<br>');
 
-                var corpo = window.document.body;
-
-
-                window.document.write('<br>')
-
-                window.document.write(+p2.innerText+ 'ovo maltine');
-
-                window.document.write('<br>')
-
-                window.document.write(+p2.innerHTML+ 'ovo maltine');
-
-                var obs = window.document.getElementById("teste").innerText = 'Olá isto foi escrito com javascript, tive que usar o getElementById pois os outros estão bugando.'
-
-                var relativa = window.document.getElementById('asidezinha');
-
-                relativa.style.backgroundColor='blueviolet';
-                relativa.style.padding='1rem';
-                relativa.style.margin='1rem';
-
-                var caixa = window.document.getElementById('caixa');
-                
-                caixa.style.backgroundColor='red';
+                //innerHTML - Teoricamento copiaria o texto e as formatações.
+                window.document.write(patoGanso.innerHTML+ ' innerHTML'+ '<br>');
         </script>  
     </body>
 </html>
