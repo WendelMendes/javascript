@@ -3,20 +3,74 @@
 <head>
     <style>
         div#area{
-            background-color: green;
+            background-color: red;
             color: white;
             width: 200px;
             height: 200px;
             line-height: 200px;
             text-align: center;
             font: sans-serif;
+            border-radius: 50vh;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.7rem;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <div id="area">Eventos DOM</div>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()">
+        Eventos DOM
+    </div>
 </body>
     <script>
+        
 
+        //Evento: tudo aquilo que possa acontecer como elemento
+            /*
+            mais famosos:
+                mouseenter -
+                mousemove -
+                mousedown -
+                mouseup -
+                click -
+                mouseout -
+            */
+
+        //Função: conjunto de linhas que vão ser executadas só quando o evento ocorrer:
+            /*
+            
+            função ação('da para colocar parametros'){
+                bloco
+            }
+            
+            */
+
+        /*forma obstrusiva*/
+        var area = window.document.getElementById('area');
+        function clicar(){
+            area.innerText = 'Clicou!'
+            area.style.backgroundColor='Green'
+        }
+
+        function entrar(){
+            area.innerText = 'Entrou!'
+            area.style.backgroundColor='Orange'
+        }
+
+        /*Forma limpa*/
+        var area = window.document.getElementById('area');
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+        /*Esse advento substitui as coisas que coloquei la na tag div*/
+        function clicar(){
+            area.innerText = 'Clicou!'
+            area.style.backgroundColor='Green'
+        }
+
+        function entrar(){
+            area.innerText = 'Entrou!'
+            area.style.backgroundColor='Orange'
+        }
     </script>
 </html>

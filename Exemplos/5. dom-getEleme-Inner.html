@@ -36,8 +36,9 @@
                 //innerText - Copia o texto do elemento selecionado.
                 window.document.write(patoGanso.innerText+ ' innerText'+ '<br>');
 
-                //innerHTML - permite às informações serem inseridas em formato HTML diretamente no elemento renderizadas on-the-fly.
-                window.document.write(patoGanso.innerHTML+ ' innerHTML'+ '<br>');
+                //innerHTML - permite formatações HTML diretamente no elemento sendo escrito no código script;
+                patoGanso.innerHTML.document.write(`<strong>teste${patoGanso}</strong>`)
+                window.document.write('<strong>Me Observe mero mortal. </strong>Tem uma tag html bem ali<< a strong');
         </script>  
     </body>
 </html>
