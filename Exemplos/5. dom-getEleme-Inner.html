@@ -6,12 +6,12 @@
     <body>
         <h1>DOM - Document Object Model</h1>
         <img src="assets/images/DOM.png" title="arvore-DOM">
-        <div style="background-color:green;" class="teste">Facilitador para dar acesso aos elementos dentro da JAVASCRIPT.</div>
+        <div style="background-color:green;" class="teste">Facilitador para dar acesso aos elementos por meio da JS.</div>
         <br>
         
         <script>
             //Utilizando a árvore DOM:
-            var corpo = window.document.body;
+            let corpo = window.document.body;
             corpo.style.backgroundColor='blueviolet';
             corpo.style.fontFamily='sans-serif';
             corpo.style.color='white';
@@ -30,13 +30,13 @@
                 //por nome - getElementsByName()
                 //por seletor - querySeletor() e querySelectorAll
                 //por tag - getElementsByTagName()
-                var patoGanso = window.document.getElementsByClassName("teste")[0];
+                const patoGanso = window.document.getElementsByClassName("teste")[0];
                 window.document.write('Reescrito com com JS: ' + patoGanso.innerText + '<br>');
 
                 //innerText - Copia o texto do elemento selecionado.
                 window.document.write(patoGanso.innerText+ ' innerText'+ '<br>');
 
-                //innerHTML - Teoricamento copiaria o texto e conseguiria colocar tag html tambem.
+                //innerHTML - permite às informações serem inseridas em formato HTML diretamente no elemento renderizadas on-the-fly.
                 window.document.write(patoGanso.innerHTML+ ' innerHTML'+ '<br>');
         </script>  
     </body>
