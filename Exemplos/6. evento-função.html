@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #area,#area2{
+            background-color: red;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 50vh;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.7rem;
+            cursor: pointer;
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+        }
+
+        main{
+            background-color: aqua;
+            width: 50vw;
+            height: 25vh;
+            font-family: Arial;
+            padding: 10px;
+            border-radius:15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()">
+        Eventos DOM
+    </div>
+    <div id="area2">
+        Eventos DOM
+    </div>
+
+
+
+    <!--Outro exemplo-->
+    <main>
+        <h1>Somando valores</h1>
+        <form action="">
+            <input type="number" name="txtn1" id="txtn1">
+            <input type="number" name="txtn2" id="txtn2">
+            <input id="somas" type="button" value="Somar">
+        </form>
+        <div id="res">Resultado:</div>
+    </main>
+
+
+</body>
+    <script>
+/*      //Evento: tudo aquilo que possa acontecer como elemento
+            //Mais famosos: mouseenter | mousemove | mousedown |     mouseup | click | mouseout
+
+        //Função: conjunto de linhas que vão ser executadas só quando o evento ocorrer:
+            function função('seus parâmetros - opcionais'){
+                blocos
+            }
+
+        /*forma obstrusiva*/
+        var area = window.document.getElementById('area');
+        function clicar(){
+            area.innerText = 'Clicou!'
+            area.style.backgroundColor='Green'
+        }
+        function entrar(){
+            area.innerText = 'Entrou!'
+            area.style.backgroundColor='Orange'
+        }
+
+        /*Forma limpa*/
+        var area2 = window.document.getElementById('area2');
+        area2.addEventListener('click', clicar2)
+        area2.addEventListener('mouseenter', entrar2)
+        area2.addEventListener('mouseout', sair2)
+        function clicar2(){
+            area2.innerText = 'Clicou!'
+            area2.style.backgroundColor='Green'
+        }
+        function entrar2(){
+            area2.innerText = 'Entrou!'
+            area2.style.backgroundColor='Orange'
+        }
+        function sair2(){
+            area2.innerText ='Saiu'
+            area2.style.backgroundColor='Purple'
+        }
+
+        /*Outro exemplo*/
+        var soma = window.document.getElementById('somas')
+        soma.addEventListener('click',somar)
+        function somar(){
+            var n1 = window.document.getElementById('txtn1');
+            var n2 = window.document.getElementById('txtn2');
+            var resultado = window.document.getElementById('res');
+            //Quando vem de uma caixa de texto ele é texto então tem q converter antes:
+            var n11 = Number(n1.value);
+            var n22 = Number(n2.value);
+            var s = n11 + n22
+            res.innerText = (`Resultado: a soma de ${n11} + ${n22} é ${s}`)
+        }
+    </script>
+</html>

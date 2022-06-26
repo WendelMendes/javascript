@@ -3,17 +3,18 @@
 <head></head>
 <body>
     <script>
-        var n1 = Number.parseInt(window.prompt("Digite um número!"));
-        var n2 = Number.parseFloat(window.prompt("Digite outro número!"));
+    /*Tipos primitivos*/
         //parseInt() - números inteiros
         //parseFloat() - números flutuantes
         //String() - letras e caracteres
         //Boolean() - True | False
+        var n1 = Number.parseInt(window.prompt("Digite um número!"));
+        var n2 = Number.parseFloat(window.prompt("Digite outro número!"));
         var n3 = n1 + n2
+    //Contatenando com (+)
         window.alert("A soma desses dois números é: " + n3 + " meu rapaz!") 
-        //Contatenando com (+)
+    //Contatenando com (circunflexo, $ e {})
         window.alert(`A soma ${n1} + ${n2} é ${n3}`)
-        //Contatenando com (circunflexo, $ e {})
     </script>
 </body>
 </html>

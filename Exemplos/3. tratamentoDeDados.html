@@ -3,16 +3,14 @@
 <head></head>
 <body>
     <script>
+        //Tratamento de dados:
         var nome = window.prompt("Digite seu primeiro nome!")
         document.write(`Olá, ${nome}`)
-        document.write(`<br>Seu nome tem: ${nome.length} letras.`)
-        document.write(`<br>Seu nome em Maiscúlas: ${nome.toUpperCase()}.`)
-        document.write(`<br>Seu nome em Minúsculas: ${nome.toLowerCase()}.`)
-        //x.length - lê quantos caracteres uma string tem
-        //x.toUpperCase() - retorna tudo em "MAIUSCULAS"
-        //x.toLowercase() - retorna tudo em "minusculas"
+        document.write(`<br>lê quantos caracteres tem: ${nome.length}.`)
+        document.write(`<br>retorna tudo em "MAIUSCULAS": ${nome.toUpperCase()}.`)
+        document.write(`<br>retorna tudo em minúsculas: ${nome.toLowerCase()}.`)
         
-        /*Tratando valores: */
+        //Tratando valores:
         var n1 = 1545.5
         n1.toFixed(2) 
         //Resultado: '1545.50' (ficar com duas casas decimais)

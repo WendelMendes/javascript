@@ -3,18 +3,14 @@
 <body>
    <script>
     //Ordem de precedencia dos operadores:
-    /*
-        1. ()          // os cálculos nos parenteses
+/*      1. ()          // os cálculos nos parenteses
         2. **         // a pontência
         3. * | / | % // a multiplicação, divisão e resto da divisão inteira
         4. + | -    // as adições e subtrações
         5. Operadores relacionais. ><>=...
         6. Operadores lógicos. Ordem: ! && ||.
-    */
-    
-
+*/
     //Operadores
-
         //Operadores - Aritméticos
         var adição = String(document.write("+"));
         var subtração = String(document.write("-"));
@@ -22,7 +18,7 @@
         var divisão = String(document.write("/"));
         var pontência = String(document.write("**")); //exemplo: 5**2 =25
         var resto_divisão_inteira = String(document.write("%"));
-        /* exemplo: Quando se divide 5/2 se obtem 2.5, já na divisão inteira: se obtem 2 e resto da divisão inteira: 1. */
+            //exemplo: Quando se divide 5/2 se obtem 2.5, já na divisão inteira: se obtem 2 e resto da divisão inteira: 1.
     
 
         //Operadores - Atribuição
@@ -31,32 +27,25 @@
             n = n+4 //n=7 (Representação)
             n+= 4  //n=7  (Representação)
 
-            //Incremento-atribuição - Posibilita incrementar 1 valor.
-                var x = 8//x=8
-                x = x+1 //x=9 (exemplo1.Representação)
-                x++     //x=9 (exemplo1.Representação)
-                x = x-1 //x=7 (exemplo2.Representação)
-                x--     //x=7 (exemplo2.Representação)
+            //Incremento-atribuição - Posibilita incrementar 1 valor:
+                var x = 8  //x=8
+                x = x+1    //x=9
+                x++        //x=9 
+                x = x-1    //x=7 
+                x--        //x=7 
         
-        //Operadores - Relacionais (Resultados são booleanos: True|False)
+        //Operadores - Relacionais (Resultados são booleanos: True|False:
         var maior = String(document.write(">"));
         var menor = String(document.write("<"));
         var maior_igual = String(document.write(">="));
         var menor_igual = String(document.write("<="));
         var igual = String(document.write("=="))
         var diferente = String(document.write("!="));
-        
-            /* Oberservações adversas:
-                5 ==   5   true  - ("analisou se tem a mesma grandeza")
-                5 ==  '5'  true  - ("analisou se tem a mesma grandeza")
-                5 === '5'  false - ("analisou se são identicos")
-                5 ===  5   true  - ("analisou se são identicos")
-            */
 
         //Operadores - Lógicos
         var negação = String(document.write("!"));     //NÃO
-        var conjunção = String(document.write("&&")); //E
-        var disjunção = String(document.write("||"));//OU
+        var conjunção = String(document.write("&&"));  //E
+        var disjunção = String(document.write("||"));  //OU
             /* exemplos:
             idade >= 15  && idade <=17; 
                 *idade maior ou igual a 15 (E) idade menor ou igual a 17.
@@ -77,6 +66,13 @@
                 variavel idade é igual a 19
                 variavel resposta igual= Idade maior que dezoito(?) 'Maior' : 'Menor';
                 SeCondiçãoTRUE('Maior') : SeCondiçãoFALSE('Menor')
+            */
+
+            /* Formas de comparação:
+                    2 ==   2   true  - "analisou se tem a mesma grandeza"
+                    2 ==  '2'  true  - "analisou se tem a mesma grandeza"
+                    2 === '2'  false - "analisou se são identicos"
+                    2 ===  2   true  - "analisou se são identicos"
             */
    </script> 
 </body>
