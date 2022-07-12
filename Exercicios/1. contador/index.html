@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <style>
+        *{
+            font-family:sans-serif;
+            background-color: purple;
+            color: white;
+        }
+
+       button{
+        background-color: crimson;
+        width: 4rem;
+        height: 4rem;
+       }
+
+       span{
+        margin: 0 10px;
+       }
+
+
+    </style>
+</head>
+<body>
+    <div class="counter-container">
+        <button name="subtrair" onclick="decrement()">-</button>
+        <span id="currentNumber">0</span>
+        <button name="adicionar" onclick="increment()">+</button>
+    </div>
+
+    <script>
+        var numeroAtualWrapper = window.document.getElementById('currentNumber');
+        var numeroAtual = 0;
+        
+        function increment(){
+            numeroAtual = numeroAtual+1;
+            numeroAtualWrapper.innerHTML = numeroAtual;
+            if(numeroAtual>=0){numeroAtualWrapper.style.color='green'}
+        }
+        
+        function decrement(){
+            numeroAtual = numeroAtual-1;
+            numeroAtualWrapper.innerHTML = numeroAtual;
+            if (numeroAtual <= 0) { numeroAtualWrapper.style.color = 'blue' }
+        }
+    </script>
+</body>
+</html>
