@@ -1,3 +1,7 @@
+var variavel = ("Escopo global e local, Poder ter valor alterado, Pode ser undefined")
+let lete = ("Escopo local de bloco, Pode ter valor alterado, Pode ser undefined")
+const constante = ("Escopo local de bloco, Valor fixo e inicial")
+
 var nome = 'Wendel'
 console.log(`Olá, ${nome}`)
 console.log(`lê quantos caracteres tem: ${nome.length}.`)
