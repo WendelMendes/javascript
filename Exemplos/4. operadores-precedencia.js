@@ -53,5 +53,7 @@
 // Formas de comparação:
     2 ==   2   //true  - "analisou se tem a mesma grandeza"
     2 ==  '2'  //true  - "analisou se tem a mesma grandeza"
+    
     2 === '2'  //false - "analisou se são identicos"
     2 ===  2   //true  - "analisou se são identicos"
+    /*optar por esse para resultado 100% prescisos*/
