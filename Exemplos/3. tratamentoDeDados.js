@@ -17,3 +17,7 @@ n1.toFixed(2).replace('.' , ',')
 n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) 
 //Resultado: 'R$ 1,545.50' (valor monetario diretamente ajustado usando funcionalidades da linguagem)
 console.log(`${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+
+//Pegando hora:
+var agora = new Date()
+var hora = agora.getHours()

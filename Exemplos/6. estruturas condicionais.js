@@ -2,9 +2,9 @@ var velocidade = 60
 console.log(`A velocidade do seu carro é de ${velocidade}Km/h`);
     if(velocidade>=60){//SE
         console.log("MULTADO!!! CANALHA");
-    } else if (velocidade >= 21 && velocidade <= 59.9){
+    } else if (velocidade >= 21 && velocidade <= 59.9){//SENÃO SE
         console.log('Mandando bem Irmão!');
-    } else{//SENÃO SE
+    } else{//SENÃO
         console.log("Evite acidentes. Aumente a velocidade!");
     }
 
@@ -16,7 +16,7 @@ switch (placar){
         console.log('jogador 1 ganhou');
         break;
     case placar = jogador2 > jogador1:
-        console.log('jogador 2 ganhou')
+        console.log('jogador 2 ganhou');
         break
     default:
         console.log('empate');

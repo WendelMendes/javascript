@@ -1,5 +1,6 @@
 console.log("Olá mundo [F8]")
 /*Tipos primitivos*/
+    //Number() - números
     //parseInt() - números inteiros
     //parseFloat() - números flutuantes
     //String() - letras e caracteres
