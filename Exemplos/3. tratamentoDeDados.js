@@ -18,6 +18,17 @@ n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
 //Resultado: 'R$ 1,545.50' (valor monetario diretamente ajustado usando funcionalidades da linguagem)
 console.log(`${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
 
-//Pegando hora:
+//Pegando hora ou data:
 var agora = new Date()
 var hora = agora.getHours()
+var diaSem = agora.getDay()
+    console.log(diaSem)
+/*
+    0 - Domingo
+    1 - Segunda
+    2 - Terça
+    3 - Quarta
+    4 - Quinta
+    5 - Sexta
+    6 - Sábado
+*/

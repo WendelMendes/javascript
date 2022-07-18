@@ -8,16 +8,16 @@ console.log(`A velocidade do seu carro é de ${velocidade}Km/h`);
         console.log("Evite acidentes. Aumente a velocidade!");
     }
 
-var jogador1 = 0;
-var jogador2 = 0;
-var placar;
+// Condição multipla
+var placar = 3
 switch (placar){
-    case placar = jogador1 > jogador2:
-        console.log('jogador 1 ganhou');
+    case placar = 1:
+        console.log('1 ganhou');
         break;
-    case placar = jogador2 > jogador1:
-        console.log('jogador 2 ganhou');
-        break
+    case placar = 2:
+        console.log('2 ganhou');
+        break;
     default:
-        console.log('empate');
+        console.log('3 ganhou');
+        break;
 }
