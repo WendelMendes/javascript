@@ -1,12 +1,17 @@
-var variavel = ("Escopo global e local, Poder ter valor alterado, Pode ser undefined")
-let lete = ("Escopo local de bloco, Pode ter valor alterado, Pode ser undefined")
-const constante = ("Escopo local de bloco, Valor fixo e inicial")
+//Tratando variavéis
+var variavel = ("Escopo global/local, Poder redeclarar, Pode ser undefined")
+let lete = ("Escopo de bloco, Poder reatribuir, Pode ser undefined")
+const CONSTANTE_ = ("Escopo de bloco, Valor fixo e inicial")
+    //Escopo de bloco: variavel só vale dentro do bloco
 
+//Tratando strings
 var nome = 'Wendel'
 console.log(`Olá, ${nome}`)
 console.log(`lê quantos caracteres tem: ${nome.length}.`)
 console.log(`retorna tudo em "MAIUSCULAS": ${nome.toUpperCase()}.`)
 console.log(`retorna tudo em minúsculas: ${nome.toLowerCase()}.`)
+console.log('Separa as letras: '+nome.split(''))
+console.log('Troca caracteres: '+nome.replace('W','WWW'))
 
 //Tratando valores:
 var n1 = 1545.5

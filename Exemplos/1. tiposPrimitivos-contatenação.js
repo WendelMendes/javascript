@@ -14,5 +14,7 @@ console.log("Olá mundo [F8]")
 
 //Contatenando com (+)
     console.log("A soma desses dois números é: " + n3 + " meu rapaz!") 
-//Contatenando com (circunflexo, $ e {})
+//Contatenando com Template strings (circunflexo, $ e {})
     console.log(`A soma ${n1} + ${n2} é ${n3}`)
+//Quebra de linha
+    console.log('1 \n2')
