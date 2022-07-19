@@ -1,33 +1,40 @@
-// como declarar um array
-/* let array = ['string', 1, true];
-console.log(array); */
+// let array = ['strings', 1, true, ['arrays1'], numbers]
+/* pode guardar vários tipos de dados, seu idice começa com 0
+*/
+let arrayExemplo = ['a','b','c'];
 
-//pode guardar vários tipos de dados
-let array = ['string', 1, true, ['array1'],['array2']];
-/* console.log(array[3]); */
+//push - adiciona elemento ao final
+arrayExemplo.push('d');
+console.log(arrayExemplo);
 
-/* // forEach
-array.forEach(function(item, index){console.log(item, index)}); */
+//pop - remove ultimo elemento
+arrayExemplo.pop();
+console.log(arrayExemplo);
 
-/* array.push([]);
-console.log(array); */
+//unshift - adiciona um novo primeiro elemento na lista
+arrayExemplo.unshift('-a');
+console.log(arrayExemplo);
 
-/* array.pop();
-console.log(array); */
+//shift - remove primeiro elemento
+arrayExemplo.shift();
+console.log(arrayExemplo);
 
-/* array.shift();
-console.log(array); */
+//includes - retorna se existe o elemento
+arrayExemplo.includes('k');
+console.log(arrayExemplo);
+//reverse - reverte ordem dos elementos
+arrayExemplo.reverse();
+console.log(arrayExemplo);
 
-/* array.unshift('novo item no início');
-console.log(array); */
+// forEach
+arrayExemplo.forEach(function(item, index){console.log(item, index)});
 
-/* console.log(array.indexOf(true)); */
+console.log(arrayExemplo.indexOf(true));
 
-/* array.splice(0, 3);
-console.log(array); */
-
-/* let novoArray = array.slice(0, 3);
-console.log(novoArray); */
-
-var object = {string: 'string', number: 1, boolean: true, array: ['array'], objectInterno: {objectInterno: 'objeto-interno'}};
-
+/*--------------------------------------------------------------------*/
+//Dicionario - Tipo chave:valor
+/*pode ter objetos dentro de objeto ou array*/
+let objectExemplo = {nome: 'Patolino', especie: 'pato'};
+console.log(objectExemplo)
+console.log(Object.values(objectExemplo))
+console.log(Object.keys(objectExemplo))
