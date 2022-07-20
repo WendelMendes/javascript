@@ -3,6 +3,12 @@ var variavel = ("Escopo global/local, Poder redeclarar, Pode ser undefined")
 let lete = ("Escopo de bloco, Poder reatribuir, Pode ser undefined")
 const CONSTANTE_ = ("Escopo de bloco, Valor fixo e inicial")
     //Escopo de bloco: variavel só vale dentro do bloco
+//Empty - valor declarado porém ele é vazio (ex: '', 0, '',  )
+    var abacaxi = ''
+//undefined - valor não declarado ('valor declarado é indefinido)
+    var abacaxi
+//null - valor não existe 'nulo' ('valor declarado é insconsiste')
+    var abacaxi = null
 
 //Tratando strings
 var nome = 'Wendel'
