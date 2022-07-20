@@ -17,3 +17,5 @@ var funcao = () =>{
     console.log('arrow-function');
 }
 funcao();
+
+//return - para função e retorna um valor

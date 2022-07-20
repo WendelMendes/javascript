@@ -14,12 +14,12 @@ for (let indice = 0; indice<array.length; indice++){
 /* for (indice in/of objeto/array){
     declaração
 } */
-// for/in - executa repetição de uma propriedade
+// for/in - executa repetição de uma propriedade das propriedades
 for ( i in object){
     console.log(i);
 }
 
-// for/of - executa repetição de um valor
+// for/of - executa repetição dos valores
 for ( i of array){
     console.log(i);
 }
