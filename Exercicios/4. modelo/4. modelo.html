@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         body{
-            background-color: yellow;
+            background-color: #ff1015;
             font-family: Arial, Helvetica, sans-serif;
             display: flex;
             flex-direction: column;
@@ -27,19 +27,27 @@
 
     </style>
 </head>
-<body>
-    <main>
+<body onload="carregar()">
         <header>
             <h1>Teste</h1>
         </header>
         <section>
-            <div>Testando...</div>
-            <div>:D</div>
+            <div id="hora">Hora do dia</div>
+            <div id="foto"></div>
         </section>
         <footer><p>&copy; Wendel Mendes.</p></footer>
     </main>
     <script>
-        
+        function carregar(){
+            var msg = window.document.getElementById('msg')
+            var img = document.getElementById('foto')
+            var data = new Date()
+            var hora = data.getHours()
+            msg.innerHTML = `Agora são ${hora} horas.`
+            if (hora>= 0 && hora <12){
+                img.src = 'assets/images/tarde.jpg'
+            }
+        }
     </script>
 </body>
 </html>
