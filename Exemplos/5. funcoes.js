@@ -1,4 +1,5 @@
-/* function nomeFunção(parametros){
+/* 
+function nomeFunção(parametros){
     bloco-instruções;
 } 
 nomeFunção();
