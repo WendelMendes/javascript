@@ -5,7 +5,8 @@ function nomeFunção(parametros){
 nomeFunção();
 */
 
-//return - para função e retorna um valor
+//return - parar função e retorna um valor
+//throw - tipo um 'return' só que vai retonar como erro
 
 //criando função-declarativa
 function função(){
