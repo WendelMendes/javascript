@@ -1,0 +1,6 @@
+function patinhosDesaparecidos(pato) {
+    for(i = 0; i < pato;){
+        console.log(`${pato} patinhos foram passear ${pato-1} retornam!`);
+    }
+}
+patinhosDesaparecidos(5)
