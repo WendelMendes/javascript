@@ -11,29 +11,29 @@ const CONSTANTE_ = ("Escopo de bloco, Valor fixo e inicial")
     var abacaxi = null
 
 //Tratando strings
-var nome = 'Wendel'
-console.log(`Olá, ${nome}`)
-console.log(`lê quantos caracteres tem: ${nome.length}.`)
-console.log(`retorna tudo em "MAIUSCULAS": ${nome.toUpperCase()}.`)
-console.log(`retorna tudo em minúsculas: ${nome.toLowerCase()}.`)
-console.log('Separa as letras: '+nome.split(''))
-console.log('Troca caracteres: '+nome.replace('W','WWW'))
+var nome = 'Wendel';
+console.log(`Olá, ${nome}`);
+console.log(`lê quantos caracteres tem: ${nome.length}.`);
+console.log(`retorna tudo em "MAIUSCULAS": ${nome.toUpperCase()}.`);
+console.log(`retorna tudo em minúsculas: ${nome.toLowerCase()}.`);
+console.log('Separa as letras: ' + nome.split(''));
+console.log('Troca caracteres: ' + nome.replace('W','WWW'));
 
 //Tratando valores:
-var n1 = 1545.5
-n1.toFixed(2) 
+var n1 = 1545.5;
+n1.toFixed(2) ;
 //Resultado: '1545.50' (ficar com duas casas decimais)
-n1.toFixed(2).replace('.' , ',') 
+n1.toFixed(2).replace('.' , ',');
 //Resultado: '1545,50' (trocar um elemento por outro)
-n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) 
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
 //Resultado: 'R$ 1,545.50' (valor monetario diretamente ajustado usando funcionalidades da linguagem)
-console.log(`${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+console.log(`${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`);
 
 //Pegando hora ou data:
-var agora = new Date()
-var hora = agora.getHours()
-var diaSem = agora.getDay()
-    console.log(diaSem)
+var agora = new Date();
+var hora = agora.getHours();
+var diaSem = agora.getDay();
+    console.log(diaSem);
 /*
     0 - Domingo
     1 - Segunda
