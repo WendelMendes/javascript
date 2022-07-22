@@ -1,9 +1,0 @@
-function patinhosDesaparecidos(pato) {
-    while (pato != -1){
-        for(let i = 0; i < pato.lenght; i--){
-            console.log(`${pato} patinhos foram passear ${pato-1} retornam`);
-            break
-        }
-    }
-}
-patinhosDesaparecidos(5)
