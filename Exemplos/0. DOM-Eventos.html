@@ -17,72 +17,69 @@
         <div id="area" onclick="clicar()">Eventos DOM</div>
         <div id="area2">Eventos DOM</div>   
 <script>
-    //Comandos básicos
+    //Comandos básicos: BOM: Browser Object Model
     /*
      window.alert("Janela de alerta");
      window.confirm("Janela de confirmação na tela");
      window.prompt("Janela de digitação");
+     /*DOM:
      window.document.write("Escreve diretamente no corpo da página");*/
 
     //Utilizando a árvore DOM:
     let corpo = window.document.body;
     corpo.style.backgroundColor='blueviolet';
-    corpo.style.fontFamily='sans-serif';
-    corpo.style.color='white';
     window.document.write('<hr>')
     document.write(window.document.charset + '<br>');
-    window.document.write(window.navigator + '<br>');
-    window.document.write(window.document.URL + '<br>');
-
+    document.write(window.navigator + '<br>');
+    document.write(window.document.URL + '<br>');
 
     //Pegando elementos com DOM:
     /*
     getElementById('Por identificador')
     getElementsByClassName('Por classe')
-    getElementsByName('Por nome')
+    getElementsByName('Por nome')[0] - 'retorna como array'
     querySeletor('Por seletor - h1.exemplo-titulo')      
     querySelectorAll('Por seletor')
-    getElementsByTagName('Por tag')*/
+    getElementsByTagName('Por tag')
+    */
     const exemplo = window.document.getElementsByClassName("exemplo-titulo")[0];
         exemplo.style.backgroundColor='orangered';
 
-//innerText - Copia o texto do elemento selecionado.
+//innerText - Copia o texto do elemento selecionado;
 var exemplo2 = window.document.querySelector('h1.exemplo-titulo');
 document.write(exemplo2.innerText+(' Anabanana')+('<br>'));
-
-
-/* CONTINUE DAQUIIIII                */
 
 
 //innerHTML - permite formatações HTML diretamente no elemento sendo escrito no código script;
 patoGanso.innerHTML.document.write(`<strong>teste${patoGanso}</strong>`)
 window.document.write('<strong>Me Observe mero mortal. </strong>Tem uma tag html bem ali<< a strong');
 
+//Manipulando classes;
+const meuElemento = document.getElementById("meu-elemento");
+    //Adiciona uma classe
+    meuElemento.classList.add("novo-estilo");
+    //Remove uma classe
+    meuElemento.classList.remove("batatinha")
 
-/*
-//Evento: tudo aquilo que possa acontecer como elemento
-//Mais famosos: mouseenter | mousemove | mousedown |     mouseup | click | mouseout
+/*-------------------------------------------------------------------*/
 
-//Função: conjunto de linhas que vão ser executadas só quando o evento ocorrer:
-function função('seus parâmetros - opcionais') {
-    blocos
-}
+//Evento: tudo aquilo que possa acontecer como elemento; Mais famosos: mouseenter | mousemove | mousedown | mouseup | click | mouseout;
 
-/*forma obstrusiva
-var area = window.document.getElementById('area');
-function clicar() {
-    area.innerText = 'Clicou!'
-    area.style.backgroundColor = 'Green'
-}
+    //forma obstrusiva
+    var area = window.document.getElementById('area');
+    function clicar() {
+        area.innerText = 'Clicou!'
+        area.style.backgroundColor = 'Green'
+    }
 
-/*Forma limpa
-var area2 = window.document.getElementById('area2');
-area2.addEventListener('click', clicar2)
-function clicar2() {
-    area2.innerText = 'Clicou!'
-    area2.style.backgroundColor = 'Green'
-}
-*/
+    //Forma limpa
+    var area2 = window.document.getElementById('area2');
+    area2.addEventListener('click', clicar2)
+    function clicar2() {
+        area2.innerText = 'Clicou!'
+        area2.style.backgroundColor = 'Green'
+    }
+
 </script>  
     </body>
 </html>

@@ -1,7 +1,6 @@
-// let array = ['strings', 1, true, ['arrays1'], numbers]
-/* pode guardar vários tipos de dados, seu idice começa com 0
-*/
 let arrayExemplo = ['a','b','c'];
+    //pode guardar vários tipos de dados (arrays, objetos, booleanos...)
+    //cada elemento tem seu indice e começa apartir de [0]
 
 //push - adiciona elemento ao final
 arrayExemplo.push('d');
@@ -32,9 +31,9 @@ arrayExemplo.forEach(function(item, index){console.log(item, index)});
 console.log(arrayExemplo.indexOf(true));
 
 /*--------------------------------------------------------------------*/
-//Dicionario - Tipo chave:valor
-/*pode ter objetos dentro de objeto ou array*/
 let objectExemplo = {nome: 'Patolino', especie: 'pato'};
 console.log(objectExemplo)
 console.log(Object.values(objectExemplo))
 console.log(Object.keys(objectExemplo))
+    //Dicionario - Tipo {chave:valor}
+    //pode guardar vários tipos de dados (arrays, objetos, booleanos...)
