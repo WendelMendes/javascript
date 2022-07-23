@@ -66,8 +66,8 @@
     var divDois = window.document.getElementById('div2-texto');
     var botao = window.document.getElementById('botao');
     var footer = document.getElementsByTagName('footer')[0];
-    botao.addEventListener('click',modoEscuro);
     function modoEscuro(){
+        var cor = 'black'
         document.body.style.backgroundColor='black';
         divUm.style.color='white';
         divUm.style.color='white';
@@ -78,7 +78,23 @@
         botao.style.backgroundColor='white';
         footer.style.backgroundColor='white';
         footer.style.color='black';
+        botao.addEventListener('click', modoClaro)
     }
+
+    function modoClaro() {
+        document.body.style.backgroundColor = 'white';
+        divUm.style.color = 'black';
+        divUm.style.color = 'black';
+        divUm.innerText = 'Light Mode ON';
+        divDois.style.backgroundColor = 'black';
+        divDois.style.color = 'white';
+        divDois.innerText = 'Dark Mode'
+        botao.style.backgroundColor = 'black';
+        footer.style.backgroundColor = 'black';
+        footer.style.color = 'white';
+        botao.addEventListener('click', modoEscuro)
+    }
+    modoClaro()
 </script>
 </body>
 </html>
