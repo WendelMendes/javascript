@@ -20,32 +20,62 @@
         section{
             background-color: #fff;
             color: black;
-            width: 50vw;
+            width: 25vw;
             padding: 15px;
             border-radius:10px;
         }
 
+        img{
+            width: 250px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        main{
+            height: 91vh;
+        }
+
+
     </style>
 </head>
 <body onload="carregar()">
-        <header>
-            <h1>Teste</h1>
-        </header>
-        <section>
-            <div id="hora">Hora do dia</div>
-            <div id="foto"></div>
-        </section>
+        <main>
+            <header>
+                <h1>Dia</h1>
+            </header>
+            <section>
+                <div id="msg">Hora do dia</div>
+                <div id="foto">
+                    <img id="img">
+                </div>
+            </section>
+        </main>
         <footer><p>&copy; Wendel Mendes.</p></footer>
     </main>
     <script>
-        function carregar(){
-            var msg = window.document.getElementById('msg')
-            var img = document.getElementById('foto')
+        function carregar() {
+            var msg = document.getElementById('msg');
+            var img = document.getElementById('img');
+            var titulo = document.getElementsByTagName('h1')[0];
+            var footer = document.getElementsByTagName('footer')[0];
             var data = new Date()
             var hora = data.getHours()
-            msg.innerHTML = `Agora são ${hora} horas.`
-            if (hora>= 0 && hora <12){
+            hora=18
+            msg.innerHTML = `Agora são ${hora} horas.`;
+            if (hora >= 0 && hora <=12) {
+                img.src = 'assets/images/manha.jpg'
+                titulo.innerText = 'Bom dia!';
+                document.body.style.backgroundColor='lightblue';
+            } else if (hora >12 && hora < 18) {
                 img.src = 'assets/images/tarde.jpg'
+                document.body.style.backgroundColor='orange';
+                titulo.innerText = 'Boa Tarde!';
+            } else {
+                document.body.style.backgroundColor = 'black';
+                img.src = 'assets/images/noite.jpg'
+                footer.style.color= 'white';
+                titulo.style.color='white';
+                titulo.innerText='Boa Noite!';
             }
         }
     </script>
